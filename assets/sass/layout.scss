@@ -1,0 +1,180 @@
+@import "_imports";
+
+/*	LAYOUT
+	====== */
+
+@media screen {
+
+	.u-lFooter {
+		clear: both;
+	}
+	body {
+		position: relative;
+	}
+	.u-lHeader {
+		padding: 4%;
+	}
+	.u-lFooter {
+		padding: 4rem $layoutContainerPadding--medium;
+	}
+	.galleria--content {
+		margin: 0 0 2.5%;
+	}
+	.u-lContent,
+	.u-lAside {
+		padding: 4%;
+	}
+	.u-lHeader,
+	.u-lMain,
+	.u-Search,
+	.u-NavSite,
+	.u-lFooter {
+		position: relative;
+		z-index: 99;
+	}
+}
+
+/*	SMALL
+	----- */
+
+@media all and (min-width: $small) {
+	.u-lMain {
+		width: 70%;
+		float: right;
+		padding: $layoutContainerPadding--medium;
+	}
+	.u-NavSite {
+		width: 30%;
+		float: left;
+	}
+	.u-lMain,
+	.u-NavSite {
+/*		padding-top: 0; */
+	}
+	.u-lFooter {
+		padding: 2rem $layoutContainerPadding--medium;
+	}
+	.u-lHeader {
+		padding-top: 2rem;
+		padding: $layoutContainerPadding--medium;
+		position: relative;
+	}
+	.u-Masthead__siteName {
+		margin-top: 4rem;
+	}
+	.u-lContent,
+	.u-lAside {
+		padding: 0;
+	}
+	.u-Search {
+		width: 16rem;
+		position: absolute;
+		right: auto;
+		top: 1.4rem;
+		left: $layoutContainerPadding--medium;
+	}
+
+}
+
+/*	MEDIUM
+	------ */
+
+@media all and (min-width: $medium) {
+	html {
+		padding: 2%;
+	}
+	.u-lMain {
+		width: 74%;
+		padding-right: 7%;
+	}
+	.u-NavSite {
+		width: 26%;
+	}
+}
+
+/*	LARGE
+	----- */
+
+@media all and (min-width: $large) {
+	body {
+		max-width: 1100px;
+		margin: 0 auto;
+	}
+	.u-lMain {
+		width: 80%;
+		padding-right: $layoutContainerPadding--medium;
+	}
+	.u-NavSite {
+		width: 20%;
+	}
+	.u-lAside {
+		padding: 0;
+		padding-left: 2%;
+		width: 30%;
+		float: right;
+	}
+	.u-lContent {
+		padding: 0;
+		padding-right: 2%;
+		width: 70%;
+		float: left;
+	}
+	.u-Search {
+		width: 21%;
+	}
+	.u-biosInner .u-lMain {
+		width: 75%;
+	}
+	.u-biosInner .u-NavSite {
+		width: 25%;
+	}
+}
+
+@media all and (min-width: $pointAtWhichSearchMovesToRight) {
+	.u-Masthead__siteName {
+		margin-top: 0;
+	}
+	.u-Search {
+		left: auto;
+		right: 3%;
+		top: 2em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

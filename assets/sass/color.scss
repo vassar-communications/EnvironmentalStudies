@@ -1,0 +1,171 @@
+@import "_imports";
+
+/*	COLOR
+	===== */
+
+a {
+	/*link-colors($normal, $hover, $active, $visited, $focus)*/
+	@include link-colors($linkColor, $linkColorHoverFocus, $linkColorActive, $linkColorVisited, $linkColorHoverFocus);
+	text-decoration: none;
+	border-bottom: 1px solid $linkBorderColor;
+	padding-bottom: 0;
+	font-weight: 500;
+}
+
+html {
+	background: url("../images/background.jpg") no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+@media all and (min-width: $small) {
+	body {
+		border: 8px solid #fff;
+	}
+	body:after {
+		border: 1px solid #DEE0CC ;
+		bottom: 0;
+		content: '';
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	/*
+	.u-Container {
+		border: 1px solid #DEE0CC;	
+	}
+	*/
+}
+/*
+.u-Container {
+	background: #fff;
+}
+*/
+body {
+	background: #fff;
+}
+.u-lHeader {
+}
+.u-lFooter {
+	background: #DEE0CC;
+}
+.u-NavSite {
+	border-right: 1px solid #DEE0CC;
+}
+tbody { 
+	tr:nth-child(odd) {
+		background-color: #e7e7e7;
+	}
+	td,
+	th {
+	border: 1px solid #ccc;
+	}
+}
+
+::-webkit-input-placeholder {
+   color: #fff;
+   font-family: $sans-serif;
+   text-transform: lowercase;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff;
+   font-family: $sans-serif;
+   text-transform: lowercase;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;
+   font-family: $sans-serif;
+   text-transform: lowercase;
+}
+:-ms-input-placeholder {  
+   color: #fff;
+   font-family: $sans-serif;
+   text-transform: lowercase;
+}
+
+/* Search */
+
+.u-Search__submit {
+ 	/*($normal, $hover, $active, $visited, $focus)*/
+	@include background-colors(#444, #333, #333, #444, #333);
+	@include link-colors(#fff, #ccc, #ccc, #fff, #ccc);
+}
+.u-Search__field {
+	color: #888C65;
+}
+@media all and (min-width: $tiny) {
+	.u-Search__field {
+		background: none;
+	}
+	.u-Search__submit,
+	.u-Search__submit:hover {
+		background: none;
+	}
+	.u-Search__submit:hover svg {
+		fill: #888C65;
+	}
+	.u-Search__submit svg {
+		fill: #fff;
+	}
+	.u-Search {
+		background: #DEE0CC;
+	}
+}
+@media all and (min-width: $small) {
+	.u-lHeader:after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 3%;
+		right: 3%;
+		height: 1px;
+		border-bottom: 1px solid #DEE0CC;
+	}
+}
+
+
+/*	Navigation
+	---------- */
+
+.u-NavSite__item:link,
+.u-NavSite__item:visited {
+	color: #67ACC9;
+}
+.u-NavSite__item:hover {
+	color: #734635;
+}
+.u-Masthead__siteName--link:link,
+.u-Masthead__siteName--link:visited {
+	color: #734635;
+}
+.u-Masthead__siteName--link:hover {
+	color: #c00;
+}
+.u-Masthead__vassar--link:link,
+.u-Masthead__vassar--link:visited {
+	color: #999;
+}
+.u-Masthead__vassar--link:hover {
+	color: #333;
+}
+
+.u-NavSite__item--isOpen > .u-NavSite__item {
+	color: #366478;
+}
+.u-NavSite__item.u-NavSite__item--isCurrent {
+	color: $linkColorHoverFocus;
+}
+
+
+/*	Bios
+	---- */
+
+.u-BioList__title {
+	color: #666;
+	font-size: .9em;
+}
+
+
+
+
+
