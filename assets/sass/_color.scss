@@ -17,7 +17,26 @@ html {
 	background-size: cover;
 	background-attachment: fixed;
 }
-@media all and (min-width: $small) {
+
+html.gf-
+{
+    background-iamge: none;
+}
+
+.gf- body
+{
+	background: url("../images/background.jpg") no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.gf- .PageContent
+{
+    background-color: #fff;
+}
+
+@media screen and (min-width: $small)
+{
 	body {
 		border: 8px solid #fff;
 	}
@@ -30,17 +49,58 @@ html {
 		right: 0;
 		top: 0;
 	}
-	/*
-	.u-Container {
-		border: 1px solid #DEE0CC;	
+    
+    .gf- body
+    {
+		border: 0;
 	}
-	*/
+	
+    .gf- body:after
+    {
+        content: none;
+    }
+    
+    .gf- .PageContent
+    {
+        border: 8px solid #fff;
+    }
+
+    .gf- .PageContent:after
+    {
+        border: 1px solid #DEE0CC ;
+        bottom: 0;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .gf- .u-Masthead__siteName
+    {
+        margin-top: 0;
+    }    
 }
-/*
-.u-Container {
-	background: #fff;
+
+@media screen and (min-width: $medium)
+{    
+    .gf- .PageContent
+    {
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+	}
 }
-*/
+
+@media screen and (min-width: 79em)
+{
+    .gf- .PageContent
+    {
+        margin-left: auto;
+        margin-right: auto;
+	}
+}
+
 body {
 	background: #fff;
 }
